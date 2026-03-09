@@ -132,10 +132,10 @@ All settings live in [settings.py](bandsintown_scraper/settings.py).
 ### Webshare Proxy
 
 ```python
-WEBSHARE_PROXY_HOST = "WEBSHARE_HOST"
-WEBSHARE_PROXY_PORT = "WEBSHARE_PORT"
-WEBSHARE_PROXY_USER = "WEBSHARE_USER"
-WEBSHARE_PROXY_PASS = "WEBSHARE_PASS"
+PROXY_HOST = "HOST"
+PROXY_PORT = "PORT"
+PROXY_USER = "USER"
+PROXY_PASS = "PASS"
 ```
 
 ### Key Scrapy Settings
@@ -332,7 +332,7 @@ Thread-local cloudscraper sessions are used so each worker thread has its own
 
 | Group | Settings |
 |---|---|
-| Proxy | `WEBSHARE_PROXY_HOST/PORT/USER/PASS` |
+| Proxy | `PROXY_HOST/PORT/USER/PASS` |
 | Concurrency | `CONCURRENT_REQUESTS`, `DOWNLOAD_DELAY`, `RANDOMIZE_DOWNLOAD_DELAY` |
 | Retry | `RETRY_ENABLED`, `RETRY_TIMES`, `RETRY_HTTP_CODES` |
 | Timeout | `DOWNLOAD_TIMEOUT` |

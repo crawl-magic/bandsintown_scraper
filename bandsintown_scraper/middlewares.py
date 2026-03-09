@@ -58,10 +58,10 @@ class BandsintownMiddleware:
     @classmethod
     def from_crawler(cls, crawler):
         s    = crawler.settings
-        host = s.get("WEBSHARE_PROXY_HOST", "")
-        port = s.getint("WEBSHARE_PROXY_PORT", 80)
-        user = s.get("WEBSHARE_PROXY_USER", "")
-        pwd  = s.get("WEBSHARE_PROXY_PASS", "")
+        host = s.get("PROXY_HOST", "")
+        port = s.getint("PROXY_PORT", 80)
+        user = s.get("PROXY_USER", "")
+        pwd  = s.get("PROXY_PASS", "")
         proxy_url = f"http://{user}:{pwd}@{host}:{port}" if host and user else ""
         return cls(proxy_url=proxy_url)
 

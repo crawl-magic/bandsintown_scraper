@@ -4,10 +4,10 @@ SPIDER_MODULES = ["bandsintown_scraper.spiders"]
 NEWSPIDER_MODULE = "bandsintown_scraper.spiders"
 
 # ── Webshare rotating proxy ───────────────────────────────────────────────────
-WEBSHARE_PROXY_HOST = "p.webshare.io"
-WEBSHARE_PROXY_PORT = 80
-WEBSHARE_PROXY_USER = "bexjaely-rotate"
-WEBSHARE_PROXY_PASS = "avg8c609wr9t"
+PROXY_HOST = "YOUR_PROXY_HOST"
+PROXY_PORT = "YOUR_PROXY_HOST"
+PROXY_USER = "YOUR_PROXY_USER"
+PROXY_PASS = "YOUR_PROXY_PASS"
 
 # ── Concurrency ───────────────────────────────────────────────────────────────
 CONCURRENT_REQUESTS = 4
